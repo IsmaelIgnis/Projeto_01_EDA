@@ -18,5 +18,13 @@
     <ClCompile Include="Programa.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Clientes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dados.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

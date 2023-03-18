@@ -128,7 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Clientes.c" />
+    <ClCompile Include="Gestores.c" />
     <ClCompile Include="Programa.c" />
+    <ClCompile Include="Transportes.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dados.h" />

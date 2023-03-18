@@ -1,6 +1,6 @@
 /*****************************************************************//**
- * \file   Clientes.c
- * \brief  Tudo sobre os clientes.
+ * \file   Transportes.c
+ * \brief  Tudo sobre os transportes.
  * 
  * \author Ismael Morais a25964
  * \date   March 2023
@@ -12,29 +12,25 @@
 #include<stdbool.h>
 #include"Dados.h"
 
-//int inserirClientes() {
-//
-//}
-
-
-/** Abre os ficheiros "CLIENTE.txt" e "CLIENTES.bin" */
-bool clientesFileOpen() {
+/** Abre os ficheiros "TRANSPORTE.txt" e "TRANSPORTES.bin" */
+bool transportesFileOpen() {
     FILE* fp;
     FILE* fps;
 
 #pragma region FICHEIRO_TXT
 
-    fp = fopen("CLIENTE.txt", "w");
-    
-
-    
+    fp = fopen("TRANSPORTE.txt", "w");
+    if (fp == NULL)
+    {
+        return false;
+    }
     fclose(fp);
 
 #pragma endregion
 
 #pragma region FICHEIRO_BIN
 
-    fps = fopen("CLIENTES.bin", "wb");
+    fps = fopen("TRANSPORTES.bin", "w");
     if (fps == NULL)
     {
         return false;
@@ -46,14 +42,14 @@ bool clientesFileOpen() {
     return true;
 }
 
-/** Lê os ficheiros "CLIENTE.txt" e "CLIENTES.bin" */
-bool clientesFileRead() {
+/** Lê os ficheiros "TRANSPORTE.txt" e "TRANSPORTES.bin" */
+bool transportesFileRead() {
     FILE* fp;
     FILE* fps;
 
 #pragma region FICHEIRO_TXT
 
-    fp = fopen("CLIENTE.txt", "r");
+    fp = fopen("TRANSPORTE.txt", "r");
     if (fp == NULL)
     {
         return false;
@@ -64,7 +60,7 @@ bool clientesFileRead() {
 
 #pragma region FICHEIRO_BIN
 
-    fps = fopen("CLIENTES.bin", "rb");
+    fps = fopen("TRANSPORTES.bin", "rb");
     if (fps == NULL)
     {
         return false;

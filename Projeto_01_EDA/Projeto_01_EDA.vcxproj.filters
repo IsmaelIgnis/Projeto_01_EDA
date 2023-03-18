@@ -21,6 +21,12 @@
     <ClCompile Include="Clientes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Gestores.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transportes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dados.h">

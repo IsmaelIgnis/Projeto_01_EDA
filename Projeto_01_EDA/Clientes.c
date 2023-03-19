@@ -6,15 +6,23 @@
  * \date   March 2023
  *********************************************************************/
 
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include <string.h>
-#include<stdbool.h>
 #include"Dados.h"
 
-//int inserirClientes() {
-//
-//}
+/** Cria a lista */
+ClientesLista* criarCliente(Clientes *c, char nome[], double saldo, char nif[], char morada[]) {
+    ClientesLista* novoCliente = (ClientesLista*)malloc(sizeof(ClientesLista));
+    
+    strcpy(novoCliente->cliente.nome, "Tenda");
+    novoCliente->cliente.nif, 4356789;
+    novoCliente->cliente.saldo = 40;
+    strcpy(novoCliente->cliente.morada, "Sao Joao");
+
+    novoCliente->cliente = *c;
+    novoCliente->next = NULL;
+    return novoCliente;
+}
+
+
 
 
 /** Abre os ficheiros "CLIENTE.txt" e "CLIENTES.bin" */

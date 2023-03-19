@@ -7,14 +7,34 @@
  *********************************************************************/
 #pragma once
 
- typedef struct Clientes {
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+#include<stdbool.h>
+//Incerir aqui include necessários
+#include"Dados.h"
+
+
+#pragma region Clientes
+ 
+typedef struct Clientes {
 	char nome[70];
 	double saldo;
 	char nif[10];
 	char morada[70];
 	//outros campos a adicionar
 	
-};
+}Clientes;
+
+ typedef struct ClientesLista {
+	 Clientes cliente;
+	 struct ClientesLista* next;
+ }ClientesLista, ClientesListaPtr;
+
+#pragma endregion
+
+
+#pragma region Gestores
 
 struct Gestores
 {
@@ -22,6 +42,11 @@ struct Gestores
 	char nif[10];
 
 };
+
+#pragma endregion
+
+
+#pragma region Transportes
 
 struct Transportes
 {
@@ -32,3 +57,5 @@ struct Transportes
 	//outros campos a adicionar 
 
 };
+
+#pragma endregion

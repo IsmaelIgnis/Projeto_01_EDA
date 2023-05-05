@@ -7,8 +7,19 @@
  *********************************************************************/
 
 #include"Dados.h"
+#include"Clientes.h"
 
-/** Cria a lista */
+
+/**
+ * Cria a lista
+ * 
+ * \param c
+ * \param nome
+ * \param saldo
+ * \param nif
+ * \param morada
+ * \return 
+ */
 ClientesLista* criarCliente(Clientes *c, char nome[], double saldo, char nif[], char morada[]) {
     ClientesLista* novoCliente = (ClientesLista*)malloc(sizeof(ClientesLista));
     
@@ -26,6 +37,12 @@ ClientesLista* criarCliente(Clientes *c, char nome[], double saldo, char nif[], 
 
 
 /** Abre os ficheiros "CLIENTE.txt" e "CLIENTES.bin" */
+
+/**
+ * .
+ * 
+ * \return 
+ */
 bool clientesFileOpen() {
     FILE* fp;
     FILE* fps;

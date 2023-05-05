@@ -32,5 +32,14 @@
     <ClInclude Include="Dados.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Clientes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gestores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transportes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

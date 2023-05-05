@@ -133,7 +133,10 @@
     <ClCompile Include="Transportes.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Clientes.h" />
     <ClInclude Include="Dados.h" />
+    <ClInclude Include="Gestores.h" />
+    <ClInclude Include="Transportes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,4 @@
-/*****************************************************************//**
+/*********************************************************************
  * \file   Dados.h
  * \brief  Dados dos utilizadores
  * 
@@ -11,20 +11,24 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdbool.h>
-//Incerir aqui include necessários
-#include"Dados.h"
+
 
 
 #pragma region Clientes
- 
+#define N 70
+
+/**
+ * .
+ */
 typedef struct Clientes {
-	char nome[70];
+	char nome[N];
 	double saldo;
 	char nif[10];
 	char morada[70];
 	//outros campos a adicionar
 	
 }Clientes;
+
 
  typedef struct ClientesLista {
 	 Clientes cliente;

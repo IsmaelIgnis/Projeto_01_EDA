@@ -7,6 +7,9 @@
  *********************************************************************/
 
 #include"Dados.h"
+#include"Gestores.h"
+
+
 
 /** Abre os ficheiros "GESTORE.txt" e "GESTORES.bin" */
 bool gestoresFileOpen() {

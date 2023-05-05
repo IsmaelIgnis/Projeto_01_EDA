@@ -7,6 +7,7 @@
  *********************************************************************/
 
 #include"Dados.h"
+#include"Transportes.h"
 
 /** Abre os ficheiros "TRANSPORTE.txt" e "TRANSPORTES.bin" */
 bool transportesFileOpen() {

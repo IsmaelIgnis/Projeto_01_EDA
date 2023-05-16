@@ -7,6 +7,9 @@
  *********************************************************************/
 
 #include"Dados.h"
+#include"Clientes.h"
+#include"Gestores.h"
+#include"Transportes.h"
 
 void main() {
 

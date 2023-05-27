@@ -10,6 +10,10 @@
 #define A 100
 #define B 50
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 
 typedef struct Clientes {
 	char nome[A];

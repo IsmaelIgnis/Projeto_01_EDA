@@ -11,19 +11,31 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdbool.h>
+#include<stdlib.h>
 
 #define A 100
 #define B 50
 
 #pragma region Clientes
 
+
+
 #pragma endregion
 
 #pragma region Gestores
 
+
+
 #pragma endregion
 
 #pragma region Transportes
+
+
+
+#pragma endregion
+
+#pragma region Grafos
+
 
 
 #pragma endregion

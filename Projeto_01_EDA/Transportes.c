@@ -8,6 +8,52 @@
 
 #include"Dados.h"
 #include"Transportes.h"
+#include"Grafos.h"
+
+
+Transportes* NovoVei(int i) {
+    Transportes* n = (Transportes*)calloc(1, sizeof(Transportes));
+    if (n == NULL) return NULL;
+    n->codR = i;
+    n->next = NULL;
+}
+
+Transportes* InsereVei(Transportes* h, Transportes* novo, bool* res) {
+    if (h == NULL) {
+        h = novo;
+        *res = true;
+        return h;
+    }
+    else {
+        Transportes* aux = h;
+        Transportes* ant = aux;
+        while (aux->codR < novo->codR) {
+            ant = aux;
+            aux = aux->next;
+        }
+        if (aux == h) {
+            novo->next = h;
+            h = novo;
+        }
+        else {
+            novo->next = aux;
+            ant->next = novo;
+        }
+        *res = true;
+    }
+    return h;
+}
+
+void MostraLista(Transportes* h) {
+    if (h == NULL) return;
+    Transportes* aux = h;
+    while (aux) {
+        printf("V: %d\n", aux->codR);
+        aux = aux->next;
+    }
+}
+
+
 
 /** Abre os ficheiros "TRANSPORTE.txt" e "TRANSPORTES.bin" */
 bool transportesFileOpen() {

@@ -27,6 +27,9 @@
     <ClCompile Include="Transportes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Viagens.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dados.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Transportes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grafos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,6 @@
 /*****************************************************************//**
  * \file   Grafos.h
- * \brief  
+ * \brief  O codigo deste ficheiro foi adaptado do codigo disponibilizado pelo professor
  * 
  * \author Ismael Morais a25964
  * \date   May 2023

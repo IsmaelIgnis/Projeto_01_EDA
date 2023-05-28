@@ -33,7 +33,6 @@ Transportes* NovoVei(int i);
 
 Transportes* InsereVei(Transportes* h, Transportes* novo, bool* res);
 void MostraLista(Transportes* h);
-void MostraListaRecursiva(Transportes* h);
 
 
 #pragma endregion

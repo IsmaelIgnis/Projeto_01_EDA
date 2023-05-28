@@ -12,6 +12,7 @@
 #include<string.h>
 #include<stdbool.h>
 #include<stdlib.h>
+#include<locale.h>
 
 #define A 100
 #define B 50
